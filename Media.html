@@ -1,0 +1,118 @@
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>معرض الصور والفيديوهات</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #0033a0, #a50044);
+      color: white;
+      font-family: Tahoma, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+    nav {
+      margin-bottom: 30px;
+    }
+    nav a {
+      color: #0033a0;
+      background-color: #ffcc00;
+      text-decoration: none;
+      font-size: 1.2em;
+      margin: 0 15px;
+      padding: 10px 22px;
+      border-radius: 35px;
+      box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5);
+      font-weight: bold;
+      transition: background-color 0.4s, color 0.4s, box-shadow 0.4s;
+      display: inline-block;
+      border: none;
+    }
+    nav a:hover {
+      background-color: #0033a0;
+      color: #ffcc00;
+      box-shadow: 0 6px 15px rgba(0, 51, 160, 0.8);
+      cursor: pointer;
+    }
+    .media-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+    .media-section img,
+    .media-section video {
+      width: 200px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .media-section img:hover,
+    .media-section video:hover {
+      transform: scale(1.05);
+    }
+    .media-section video {
+      cursor: default;
+    }
+    .video-link {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎬 معرض برشلونة</h1>
+
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="trophies.html">بطولات نادي برشلونة 🏆</a>
+    <a href="contact.html">تواصل معي</a>
+  </nav>
+
+  <div class="media-section">
+    <!-- صور -->
+    <a href="Barca.html"><img src="Barca.jpg" alt="Barca" /></a>
+    <a href="RRLD.html"><img src="RRLD.jpg" alt="RRLD" /></a>
+    <a href="Pedri.html"><img src="Pedri.jpg" alt="Pedri" /></a>
+    <a href="Messi.html"><img src="Messi.jpg" alt="Messi" /></a>
+    <a href="Lrr.html"><img src="Lrr.jpg" alt="Lrr" /></a>
+    <a href="Goat.html"><img src="Goat.jpg" alt="Goat" /></a>
+
+    <!-- فيديوهات -->
+    <a class="video-link" href="SuperCup.html" title="Super Cup Video">
+      <video muted autoplay loop>
+        <source src="SuperCup.mp4" type="video/mp4" />
+      </video>
+    </a>
+
+    <a class="video-link" href="Lionel.html" title="Lionel Video">
+      <video muted autoplay loop>
+        <source src="Lionel.mp4" type="video/mp4" />
+      </video>
+    </a>
+
+    <a class="video-link" href="MessiVideo.html" title="Messi Video">
+      <video muted autoplay loop>
+        <source src="Messi.mp4" type="video/mp4" />
+      </video>
+    </a>
+
+    <a class="video-link" href="MSN.html" title="MSN Memory Video">
+      <video muted autoplay loop>
+        <source src="MSN memory.mp4" type="video/mp4" />
+      </video>
+    </a>
+
+    <a class="video-link" href="WorldCup.html" title="World Cup Memory Video">
+      <video muted autoplay loop>
+        <source src="World Cup memory.mp4" type="video/mp4" />
+      </video>
+    </a>
+  </div>
+</body>
+</html>
